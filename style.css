@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+/**/
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+header p{
+font-weight: 700;
+}
+.main-box {
+border-radius: 10px;
+box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.074);
+padding: 35px 30px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 835px;
+}
+.mark-all{
+    font-size: 20px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    color: var(--Dark-grayish-blue);
+} 
+
+.names:active,
+.mark-all:active{
+ transform: scale(0.96);
+ color: blue;
+} 
+.notification{
+color: white;
+background-color: rgb(28, 0, 152);
+padding: 1px 15px;
+border-radius: 10px;
+} 
+.parent{
+padding: 25px;
+background-color: var(--Very-light-grayish-blue);
+border-radius: 10px;
+display: flex;
+gap: 20px;
+
+} 
+.childs{
+display: grid;
+font-size: 20px;
+gap: 5px;
+width: 100%;
+}
+.parent img{
+    width: 50px;
+    object-fit: contain;
+    width: 50px;
+    object-fit: contain;
+    object-position: top;
+}
+
+.p{
+    color: var(--Dark-grayish-blue);
+    font-size: 19px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+ .names{
+color: var(--Very-dark-blue);
+text-decoration-line: none;
+font-weight: 800;
+}
+.link{
+    text-decoration-line: none;
+    font-weight: 800;
+    color: var(--Dark-grayish-blue);
+}
+.unread{
+
+cursor: pointer;
+}
+  .unread::after{
+content: "";
+display: inline-block;
+    width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: red;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    height: 102px;
+}
+   .status{
+    color: var(--Grayish-blue);
+   }
+
+
+   @media (max-width: 991.98px){
+   	*{
+        font-size: 13px;
+
+    }
+    .parent{
+        padding-block: 20px;
+    }
+   }
